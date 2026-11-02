@@ -1,0 +1,33 @@
+{
+  "entities": {
+    "UnitRiskItem": {
+      "title": "UnitRiskItem",
+      "description": "Risk register item for hospital units in RSU SHANTI GRAHA",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "unit": { "type": "string" },
+        "unitLabel": { "type": "string" },
+        "categoryKey": { "type": "string" },
+        "categoryName": { "type": "string" },
+        "statement": { "type": "string" },
+        "rootCause": { "type": "string" },
+        "p": { "type": "number" },
+        "d": { "type": "number" },
+        "score": { "type": "number" },
+        "grade": { "type": "string" },
+        "mitigation": { "type": "string" },
+        "pic": { "type": "string" },
+        "target": { "type": "string" },
+        "status": { "type": "string" }
+      },
+      "required": ["id", "statement", "unit"]
+    }
+  },
+  "firestore": {
+    "/risks/{riskId}": {
+      "schema": "UnitRiskItem",
+      "description": "Collection of all unit and hospital risk registers"
+    }
+  }
+}

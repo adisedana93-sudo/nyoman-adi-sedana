@@ -1,0 +1,6 @@
+{
+  "name": "SIM RISK REGISTER | Manajemen Risiko Rumah Sakit dan IKP",
+  "description": "Sistem Informasi Tata Kelola Klinis, Pelaporan Insiden Keselamatan Pasien (IKP), Matriks Grading Risiko, dan Investigasi RCA Rumah Sakit.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
